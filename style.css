@@ -21,6 +21,10 @@ DEBUG
 /*-------
 GENERAL
 -------*/
+body{
+    font-family: 'Cabin', sans-serif;
+}
+
 .flex{
     display: flex;
 }
@@ -37,31 +41,45 @@ GENERAL
     margin: 0px auto;
 }
 
+.btn{
+    border-radius: 16px;
+    padding: 6px 12px;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
 /*-------
 HEADER
 -------*/
 .menu{
-    background-color: #ADD8E6;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    background-color: #3161E0;
+    padding: 10px 0px;
 }
 
-.menu > .container1180.flex > *{
-    background-color: #DAA520;
-    padding: 5px;
-}
-
-.login, .logo{
-    width: 20%
+.menu > .flex{
+    justify-content: space-between;
+    align-items: center;
 }
 
 nav{
-    width: 60%;
-    text-align: center;
+    padding: 5px;
 }
 
-.login{
-    text-align: end;
+.menu ul a{
+    padding: 0px 20px;
+    color: white
+}
+
+.btn--white{
+    background-color: white;
+    color: black;
+    font-size: small;
 }
 
 /* hero--- */
