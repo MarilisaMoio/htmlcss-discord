@@ -27,6 +27,7 @@ body{
 
 .flex{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .container1180{
@@ -70,6 +71,11 @@ li{
 .btn--gray{
     background-color: #23272A;
     color: white
+}
+
+.btn--liliac{
+    background-color: #8EA1E1;
+    color: white;
 }
 
 /*-------
@@ -138,33 +144,54 @@ main > section:nth-child(even){
 }
 
 main > section{
-    padding-top: 30px;
-    padding-bottom: 30px;
+    padding: 70px 0px;
 }
 
-main div:not(.container1180){
-    min-height: 400px;
+section > .flex{
+    align-items: center;
 }
 
-main .container1180 > div:first-child{
-    width: 60%;
-    background-color: #1E90FF;
+main .container1180 > img:not(.big > *){
+    width: 75%;
 }
 
-main .container1180 > div:last-child{
-    width: 40%;
-    background-color: #FFC0CB;
+main .container1180 > div:not(.big > *){
+    width: 25%;
+    min-width: 200px;
 }
 
-main > section:nth-child(2) div:first-child{
+main > section:nth-child(2) > .flex > img{
     order: 1;
 }
 
-/* green box */
-main > section:last-child > .container1180 > div{
-    background-color: #228B22;
-    width: 100%;
-    min-height: 1180px;
+h2{
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+
+main p{
+    line-height: 1.8;
+    font-size: 18px;
+}
+
+main img:not(.big > *){
+    max-height: 400px;
+    align-self: flex-start;
+}
+
+.big{
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+}
+
+.big > div:nth-last-child(2){
+    font-weight: 700;
+    font-size: 20px;
+    background-image: url(img/stars.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    padding: 25px;
 }
 
 /*-------
